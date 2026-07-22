@@ -1,23 +1,27 @@
-# Security Misconfiguration Scanner
+# 🔒 Security Misconfiguration Scanner
 
-## Project Overview
-
-Security Misconfiguration Scanner is a Python-based web security assessment tool that detects common security weaknesses in web applications.
-
-The scanner performs automated checks for security headers, HTTPS configuration, exposed directories, server information, SSL certificate details, and technology detection.
+A Python-based web security assessment tool that identifies common security misconfigurations in websites and generates detailed JSON and PDF security reports.
 
 ---
 
-## Features
+## 📖 Project Overview
 
-### 1. Website Reachability Check
+The **Security Misconfiguration Scanner** is a Python project developed to analyze websites for common security weaknesses. It performs automated security checks and generates detailed reports that help identify potential security misconfigurations.
+
+The scanner is intended for **educational purposes** and should only be used on websites that you own or have permission to test.
+
+---
+
+## ✨ Features
+
+### ✅ Website Reachability Check
 - Checks whether the target website is accessible.
 - Displays HTTP response status code.
 
-### 2. HTTPS Security Check
+### ✅ HTTPS Security Check
 - Detects whether HTTPS is enabled.
 
-### 3. Security Header Analysis
+### ✅ Security Header Analysis
 Checks important security headers:
 
 - Content-Security-Policy
@@ -26,13 +30,13 @@ Checks important security headers:
 - X-Content-Type-Options
 - Referrer-Policy
 
-### 4. Server Information Detection
+### ✅ Server Information Detection
 - Identifies server information exposed through HTTP headers.
 
-### 5. HTTP Methods Check
+### ✅ HTTP Methods Check
 - Checks whether allowed HTTP methods are disclosed.
 
-### 6. Directory Exposure Check
+### ✅ Directory Exposure Check
 Checks common sensitive paths:
 
 - /admin
@@ -40,35 +44,152 @@ Checks common sensitive paths:
 - /.env
 - /config.php
 
-### 7. Technology Detection
-Detects possible technologies used by the website.
+### ✅ Technology Detection
+Detects possible technologies such as:
 
-Examples:
 - Cloudflare
 - Apache
+- Nginx
 - PHP
 - WordPress
 
-### 8. SSL Certificate Analysis
+### ✅ SSL Certificate Analysis
+
 Provides:
 
 - Certificate issuer
 - Expiry date
-- Remaining validity days
+- Remaining validity
+- Certificate status
 
-### 9. Report Generation
-Generates a JSON security assessment report.
+### ✅ Cookie Security Check
+
+Checks whether cookies use:
+
+- Secure
+- HttpOnly
+- SameSite
+
+### ✅ Risk Assessment
+
+Calculates an overall risk level based on detected security issues.
+
+### ✅ Report Generation
+
+Generates:
+
+- JSON Report
+- PDF Report
 
 ---
 
-## Technologies Used
+# 🛠 Technologies Used
 
-- Python
-- Requests Library
-- SSL Module
-- Socket Programming
-- JSON Reporting
+- Python 3
+- Requests
+- JSON
+- SSL
+- Socket
+- FPDF
+- Git
+- GitHub
 
 ---
 
-## Project Structure
+# 📂 Project Structure
+
+```
+security-misconfiguration-scanner/
+│
+├── scanner.py
+├── checks.py
+├── directories.py
+├── tech_detect.py
+├── ssl_check.py
+├── cookie_check.py
+├── report.py
+├── pdf_report.py
+├── README.md
+├── reports/
+└── backup/
+```
+
+---
+
+# 🚀 Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/parveerchahal/security-misconfiguration-scanner.git
+```
+
+Go to the project folder:
+
+```bash
+cd security-misconfiguration-scanner
+```
+
+Install dependencies:
+
+```bash
+pip install requests fpdf
+```
+
+Run the scanner:
+
+```bash
+python3 scanner.py
+```
+
+---
+
+# ▶ Usage
+
+1. Start the scanner.
+2. Enter the target website URL.
+3. The scanner performs all configured security checks.
+4. Review the generated JSON and PDF reports.
+
+---
+
+# 📸 Sample Output
+
+The scanner generates:
+
+- Terminal output
+- JSON security report
+- PDF security report
+
+*(Screenshots can be added here later.)*
+
+---
+
+# 🚀 Future Improvements
+
+Possible future enhancements include:
+
+- Port Scanning
+- Subdomain Enumeration
+- HTML Report Generation
+- GUI Interface
+- CVE Database Integration
+- Multi-threaded Scanning
+
+---
+
+# 👩‍💻 Author
+
+**Parveer Chahal**
+
+Computer Science & Engineering Student
+
+Cybersecurity Enthusiast
+
+---
+
+# ⚠ Disclaimer
+
+This project is intended for **educational and authorized security testing only**.
+
+Do not scan systems or websites without proper permission.
