@@ -25,13 +25,14 @@ A Python-based web application security scanner that identifies common security 
 - Flask
 - JSON
 - SSL/TLS
-- Git & GitHub
+- Git
+- GitHub
 
 ---
 
 ## 📁 Project Structure
 
-```
+```text
 Security-Misconfiguration-Scanner/
 │── scanner.py
 │── checks.py
@@ -39,11 +40,7 @@ Security-Misconfiguration-Scanner/
 │── tech_detect.py
 │── directories.py
 │── report.py
-│── backup.py
-│── cookie_check.py
-│── pdf_report.py
 │── reports/
-│── screenshots/
 │── README.md
 ```
 
@@ -51,25 +48,25 @@ Security-Misconfiguration-Scanner/
 
 ## 🚀 How to Run
 
-1. Clone the repository
+### 1. Clone the repository
 
 ```bash
-git clone https://github.com/ParveerChahal/Security-Misconfiguration-Scanner.git
+git clone https://github.com/parveerchahal/security-misconfiguration-scanner.git
 ```
 
-2. Navigate into the project
+### 2. Go to the project folder
 
 ```bash
-cd Security-Misconfiguration-Scanner
+cd security-misconfiguration-scanner
 ```
 
-3. Install dependencies
+### 3. Install dependencies
 
 ```bash
-pip install -r requirements.txt
+pip install requests
 ```
 
-4. Run the scanner
+### 4. Run the scanner
 
 ```bash
 python3 scanner.py
@@ -77,37 +74,37 @@ python3 scanner.py
 
 ---
 
-## 📸 Project Screenshots
+# 📸 Project Screenshots
 
-### ▶️ Running the Scanner
+## ▶️ Running the Scanner
 
 Shows the scanner analyzing the target website.
 
-![Running the Scanner](screenshots/scanner-run.png)
+![Running the Scanner](scanner-run.png)
 
 ---
 
-### 📋 Scan Summary
+## 📋 Scan Summary
 
 Displays detected security issues, missing headers, server details, and scan results.
 
-![Scan Summary](screenshots/scan-summary.png)
+![Scan Summary](scan-summary.png)
 
 ---
 
-### 📄 Generated JSON Report
+## 📄 Generated JSON Report
 
 Automatically generated report containing scan findings and risk assessment.
 
-![JSON Report](screenshots/json-report.png)
+![Generated JSON Report](json-report.png)
 
 ---
 
-### 📂 Project Structure
+## 📂 Project Structure
 
 Overview of the project files and folder organization.
 
-![Project Structure](screenshots/project-structure.png)
+![Project Structure](project-structure.png)
 
 ---
 
