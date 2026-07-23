@@ -1,20 +1,20 @@
 # 🔒 Security Misconfiguration Scanner
 
-A Python-based web application security scanner that identifies common security misconfigurations in websites. The scanner performs multiple security checks, generates a detailed JSON report, and helps users identify potential vulnerabilities.
+A Python-based security scanner that checks websites for common security misconfigurations such as missing security headers, HTTPS configuration, exposed directories, SSL certificate details, and technology detection.
 
 ---
 
 ## ✨ Features
 
-- ✅ Checks website availability
-- 🔐 Verifies HTTPS configuration
-- 🛡️ Detects missing security headers
-- 🌐 Identifies server information
-- 🔍 Checks allowed HTTP methods
-- 📂 Detects exposed common directories
-- ⚙️ Detects web technologies
-- 📄 Generates a JSON report
-- 📊 Displays scan summary with risk level
+- ✅ Website Reachability Check
+- 🔒 HTTPS Verification
+- 🛡️ Security Headers Analysis
+- 🌐 Server Information Detection
+- 📂 Common Directory Exposure Check
+- 🔍 Technology Detection
+- 📜 SSL Certificate Validation
+- 📄 JSON Report Generation
+- 📊 Risk Assessment Summary
 
 ---
 
@@ -22,55 +22,53 @@ A Python-based web application security scanner that identifies common security 
 
 - Python 3
 - Requests
-- Flask
+- SSL
 - JSON
-- SSL/TLS
+- Socket
 - Git
 - GitHub
+- Kali Linux
 
 ---
 
 ## 📁 Project Structure
 
-```text
-Security-Misconfiguration-Scanner/
+```
+security-misconfiguration-scanner/
 │── scanner.py
 │── checks.py
 │── ssl_check.py
-│── tech_detect.py
 │── directories.py
+│── tech_detect.py
 │── report.py
-│── reports/
+│── pdf_report.py
 │── README.md
+│── reports/
 ```
 
 ---
 
 ## 🚀 How to Run
 
-### 1. Clone the repository
+Clone the repository:
 
 ```bash
 git clone https://github.com/parveerchahal/security-misconfiguration-scanner.git
 ```
 
-### 2. Go to the project folder
+Go inside the project:
 
 ```bash
 cd security-misconfiguration-scanner
 ```
 
-### 3. Install dependencies
-
-```bash
-pip install requests
-```
-
-### 4. Run the scanner
+Run the scanner:
 
 ```bash
 python3 scanner.py
 ```
+
+Enter the website URL when prompted.
 
 ---
 
@@ -80,7 +78,7 @@ python3 scanner.py
 
 Shows the scanner analyzing the target website.
 
-![Running the Scanner](scanner-run.png)
+![Running Scanner](scanner-run.png)
 
 ---
 
@@ -108,24 +106,28 @@ Overview of the project files and folder organization.
 
 ---
 
-## 🔮 Future Improvements
+# 🔮 Future Improvements
 
 - PDF report generation
-- Multi-threaded scanning
+- GUI version
 - Export reports in multiple formats
-- Additional OWASP security checks
-- Improved vulnerability detection
+- Vulnerability severity scoring
+- Additional security checks
 
 ---
 
 ## 👩‍💻 Author
 
-**Parveer Kaur**
+**Parveer Kaur chahal**
 
-Computer Science & Engineering Student
+Computer Science Engineering Student
 
 Cybersecurity Trainee
 
+Thapar Institute of Engineering & Technology
+
 ---
 
-⭐ If you found this project useful, consider giving it a star!
+## ⭐ Support
+
+If you found this project useful, consider giving it a ⭐ on GitHub.
